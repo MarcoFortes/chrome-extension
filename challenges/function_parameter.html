@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function parameters</title>
+</head>
+<body>
+    
+    <p id="welcome-el"></p>
+
+    <!--- JS CODE --->
+    <script>
+
+       const welcomeEl = document.getElementById("welcome-el")
+
+       function greetUser(greeting, name, emoji){
+            welcomeEl.textContent = ` ${greeting}, ${name} ${emoji}`
+       }
+
+       greetUser("Welcome back ", "Marco Fortes", "👋")
+    </script>
+
+</body>
+</html>

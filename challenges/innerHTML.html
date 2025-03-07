@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML Property</title>
+    <style>
+            body { text-align: center;}
+            #container { margin-top: 30px;}
+            #container button { background: lightcoral; border: none; padding: 10px 20px; font-size: 20px; font-weight: bold; color: white;}
+            p { color: lightcoral; font-weight: bold;
+}
+    </style>
+</head>
+<body>
+
+    <div id="container">
+    </div>
+
+    <!-- JS CODE -->
+    <script>
+        // Use .innerHTML to render a Buy! button inside the div container
+        const container = document.getElementById("container");
+        container.innerHTML = "<button onclick='buy()'>Buy!</button>"
+
+        function buy(){
+            container.innerHTML += "<p>Thank you for buying!</p>"
+        }
+    </script>
+
+</body>
+</html>
